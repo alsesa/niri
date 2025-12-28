@@ -3397,7 +3397,7 @@ checksum = "b7c388c1b5e93756d0c740965c41e8822f866621d41acbdf6336a6a168f8840c"
 [[package]]
 name = "smithay"
 version = "0.7.0"
-source = "git+https://github.com/Smithay/smithay.git#ca932e042fa9ad150605c150a86275b85f9ad5b3"
+source = "git+https://github.com/Smithay/smithay.git?rev=0924f6e6d7d160f5c22b930e672300d0b5ef5e34#0924f6e6d7d160f5c22b930e672300d0b5ef5e34"
 dependencies = [
  "aliasable",
  "appendlist",
@@ -3429,6 +3429,7 @@ dependencies = [
  "tempfile",
  "thiserror 2.0.17",
  "tracing",
+ "tracy-client",
  "udev",
  "wayland-backend",
  "wayland-client",

@@ -31,6 +31,7 @@ tracy-client = { version = "0.18.4", default-features = false }
 [workspace.dependencies.smithay]
 # version = "0.4.1"
 git = "https://github.com/Smithay/smithay.git"
+rev = "0924f6e6d7d160f5c22b930e672300d0b5ef5e34"
 # path = "../smithay"
 default-features = false
 
@@ -138,7 +139,7 @@ systemd = ["dbus"]
 # Enables screencasting support through xdg-desktop-portal-gnome.
 xdp-gnome-screencast = ["dbus", "pipewire"]
 # Enables the Tracy profiler instrumentation.
-profile-with-tracy = ["profiling/profile-with-tracy", "tracy-client/default"]
+profile-with-tracy = ["profiling/profile-with-tracy", "tracy-client/default", "smithay/tracy_gpu_profiling"]
 # Enables the on-demand Tracy profiler instrumentation.
 profile-with-tracy-ondemand = ["profile-with-tracy", "tracy-client/ondemand", "tracy-client/manual-lifetime"]
 # Enables Tracy allocation profiling.
